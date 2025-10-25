@@ -1,9 +1,12 @@
 # STaR
 STaR: Self-Taught Reasoner on GSM8K (Llama-3.2-3B-Instruct)
+
 Setup:
+
 Base model: Llama-3.2-3B-Instruct (decoder-only)
 Training dataset: GSM8K train split
 Evaluation dataset: GSM8K test split
+
 Compared methods:
 • Zero-Shot Chain-of-Thought (CoT)
 • Vanilla SFT (train on gold rationales from train set only)
