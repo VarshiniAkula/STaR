@@ -1,0 +1,10 @@
+transformers>=4.44
+datasets>=2.20
+accelerate>=0.34
+peft>=0.12
+bitsandbytes>=0.44
+python-dotenv>=1.0
+sentencepiece>=0.2
+evaluate>=0.4
+tqdm>=4.66
+numpy>=1.26

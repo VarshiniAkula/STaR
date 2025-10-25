@@ -1,0 +1,25 @@
+model_id: ${MODEL_ID}
+seed: ${SEED}
+max_new_tokens: 512
+gen_temp: 0.0
+gen_top_p: 1.0
+batch_size_eval: 8
+train:
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lr: 2.0e-5
+  num_epochs: 1
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  max_steps: null
+  fp16: true
+  qlora: true
+  packing: true
+star:
+  iterations: 2
+  max_samples_train: 7473        # full GSM8K train
+  max_samples_test: 1319         # full GSM8K test
+  rationalization: true
+  fewshot_examples: 8
+  stop_string: "####"
